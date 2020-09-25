@@ -1,0 +1,92 @@
+.container {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "title title title title"
+    ". content content ."
+    "footer footer footer footer"
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+li {
+  display: inline;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  display: block;
+    font-size: 2.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Ma Shan Zheng', cursive;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img {
+  width: 1000px;
+  height: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  color: #000;
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-family: 'serif12_beta_rgregular', Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  position: relative;
+  display: inline;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-family: 'serif12_beta_rgregular', Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background: pink;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+}

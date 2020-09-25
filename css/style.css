@@ -1,0 +1,98 @@
+@import url("nav.css");
+@import url("img.css");
+@import url("card.css");
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  grid-template-areas:
+    "header header header header"
+    "content content content content"
+    "footer footer footer footer";
+}
+
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-image: url("../images/header.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Marck Script', cursive;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  position: relative;
+  display: inline;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  font-size: 13.5px;
+  line-height: 1.6;
+  font-family: 'serif12_beta_rgregular', Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  background: pink;
+}
+
+
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+@media(max-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  }
+}
+@media(min-width: 600px) and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+  }
+}
+@media(min-width: 901px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    "content content content content"
+    "footer footer footer footer";
+  }
+}
