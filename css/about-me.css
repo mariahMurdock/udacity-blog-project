@@ -1,0 +1,26 @@
+@import url("nav.css");
+.heading {
+  text-align: center;
+  color: pink;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.content {
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+  font-size: 16px;
+  text-align: left;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 12px 50px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+.contact {
+  text-align: center;
+  padding: 20px;
+}

@@ -1,3 +1,4 @@
+@import url("nav.css");
 .container {
   display: grid;
   grid-auto-rows: auto;
@@ -11,23 +12,6 @@
 .header {
   grid-area: header;
   text-align: center;
-}
-
-.nav {
-  position: relative;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-li {
-  display: inline;
-}
-
-.link {
-  color: black;
-  text-decoration: none;
 }
 
 .title {
